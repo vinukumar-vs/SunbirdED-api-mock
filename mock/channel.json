@@ -1,0 +1,185 @@
+{
+    "id": "api.channel.read",
+    "ver": "1.0",
+    "ts": "2023-10-25T11:47:20.383Z",
+    "params": {
+        "resmsgid": "412604f0-732c-11ee-98d3-f532cad92d93",
+        "msgid": "5b06bac7-31c2-44bc-998e-cd67842f2e9e",
+        "status": "successful",
+        "err": null,
+        "errmsg": null
+    },
+    "responseCode": "OK",
+    "result": {
+        "channel": {
+            "identifier": "0135261634806579203",
+            "lastStatusChangedOn": "2023-06-06T06:52:28.791+0000",
+            "code": "0135261634806579203",
+            "frameworks": [
+                {
+                    "name": "agriculture_framework",
+                    "relation": "hasSequenceMember",
+                    "identifier": "agriculture_framework",
+                    "description": "Sunbird TPD framework",
+                    "objectType": "Framework",
+                    "status": "Live",
+                    "type": "K-12",
+                    "index": 3
+                }
+            ],
+            "consumerId": "7411b6bd-89f3-40ec-98d1-229dc64ce77d",
+            "description": "Default Organisation for Sunbird",
+            "assetAdditionalCategories": [],
+            "autoCreateBatch": "Enabled",
+            "languageCode": [],
+            "createdOn": "2023-06-06T06:52:28.791+0000",
+            "objectType": "Channel",
+            "versionKey": "1696490575132",
+            "collectionPrimaryCategories": [
+                "Course",
+                "Digital Textbook"
+            ],
+            "contentPrimaryCategories": [
+                "Course Assessment",
+                "eTextbook",
+                "Explanation Content",
+                "Learning Resource",
+                "Practice Question Set"
+            ],
+            "name": "sunbird",
+            "primaryCategories": [
+                {
+                    "identifier": "obj-cat:asset_asset_all",
+                    "name": "Asset",
+                    "targetObjectType": "Asset"
+                },
+                {
+                    "identifier": "obj-cat:certificate-template_asset_all",
+                    "name": "Certificate Template",
+                    "targetObjectType": "Asset"
+                },
+                {
+                    "identifier": "obj-cat:content-playlist_collection_all",
+                    "name": "Content Playlist",
+                    "targetObjectType": "Collection"
+                },
+                {
+                    "identifier": "obj-cat:course_collection_all",
+                    "name": "Course",
+                    "targetObjectType": "Collection"
+                },
+                {
+                    "identifier": "obj-cat:course-unit_collection_all",
+                    "name": "Course Unit",
+                    "targetObjectType": "Collection"
+                },
+                {
+                    "identifier": "obj-cat:textbook_collection_all",
+                    "name": "Digital Textbook",
+                    "targetObjectType": "Collection"
+                },
+                {
+                    "identifier": "obj-cat:digital-textbook_collection_all",
+                    "name": "Digital Textbook",
+                    "targetObjectType": "Collection"
+                },
+                {
+                    "identifier": "obj-cat:etextbook_content_all",
+                    "name": "eTextbook",
+                    "targetObjectType": "Content"
+                },
+                {
+                    "identifier": "obj-cat:explanation-content_content_all",
+                    "name": "Explanation Content",
+                    "targetObjectType": "Content"
+                },
+                {
+                    "identifier": "obj-cat:multiple-choice-question_question_all",
+                    "name": "Multiple Choice Question",
+                    "targetObjectType": "Question"
+                },
+                {
+                    "identifier": "obj-cat:observation_questionset_all",
+                    "name": "Observation",
+                    "targetObjectType": "QuestionSet"
+                },
+                {
+                    "identifier": "obj-cat:observation-with-rubrics_questionset_all",
+                    "name": "Observation with rubrics",
+                    "targetObjectType": "QuestionSet"
+                },
+                {
+                    "identifier": "obj-cat:practice-question-set_questionset_all",
+                    "name": "Practice Question Set",
+                    "targetObjectType": "QuestionSet"
+                },
+                {
+                    "identifier": "obj-cat:subjective-question_question_all",
+                    "name": "Subjective Question",
+                    "targetObjectType": "Question"
+                },
+                {
+                    "identifier": "obj-cat:survey_questionset_all",
+                    "name": "Survey",
+                    "targetObjectType": "QuestionSet"
+                },
+                {
+                    "identifier": "obj-cat:textbook-unit_collection_all",
+                    "name": "Textbook Unit",
+                    "targetObjectType": "Collection"
+                },
+                {
+                    "identifier": "obj-cat:training-material_collection_all",
+                    "name": "Training Material",
+                    "targetObjectType": "Collection"
+                }
+            ],
+            "additionalCategories": [
+                "Asset",
+                "Certificate Template",
+                "Content",
+                "Content Playlist",
+                "Course",
+                "Course Assessment",
+                "Course Unit",
+                "Digital Textbook",
+                "eTextbook",
+                "Exam Question Set",
+                "Explanation Content",
+                "Multiple Choice Question",
+                "Observation",
+                "Observation with rubrics",
+                "Practice Question Set",
+                "Subjective Question",
+                "Survey",
+                "Textbook",
+                "Textbook Unit",
+                "Training Material"
+            ],
+            "lastUpdatedOn": "2023-10-05T07:22:55.132+0000",
+            "defaultCourseFramework": "TPD",
+            "collectionAdditionalCategories": [
+                "Textbook",
+                "Lesson Plan"
+            ],
+            "assetPrimaryCategories": [
+                "Asset",
+                "CertAsset",
+                "Certificate Template"
+            ],
+            "contentAdditionalCategories": [
+                "Classroom Teaching Video",
+                "Concept Map",
+                "Curiosity Question Set",
+                "Experiential Resource",
+                "Explanation Video",
+                "Focus Spot",
+                "Learning Outcome Definition",
+                "Marking Scheme Rubric",
+                "Pedagogy Flow",
+                "Textbook"
+            ],
+            "status": "Live"
+        }
+    }
+}
