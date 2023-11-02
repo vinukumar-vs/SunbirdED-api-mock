@@ -25,7 +25,7 @@ PROXY_HOST =  xxxx      // ex:'https://proxy-server.com'
 ## How to use
 
 **Step 1:**  
-Import the sample postman collection file into postman. Use this collection as a mock collection for Postman mock server.  
+Import the sample [postman collection](https://github.com/vinukumar-vs/SunbirdED-api-mock/tree/main/postman.collection) file into postman. Use this collection as a mock collection for Postman mock server.  
 Mock the API that you want to - Ex: Channel read api below  
 ```
 curl --location 'https://dbcf2201-123f-4729-b5a5-0af277e92f7e.mock.pstmn.io/api/channel/v1/read/0135261634806579203'
