@@ -1,31 +1,11 @@
 // include dependencies
 const express = require('express');
-const env = require('dotenv').config();
-
-// const fetch = require('node-fetch');
 const { createProxyMiddleware } = require('http-proxy-middleware');
+// const fetch = require('node-fetch');
 // const mockData = require('./loadMock.js');
 const localtunnel = require("localtunnel");
 const app = express();
-
-// Application specific constants
-// const PORT = process.env.PORT | 3001;
-// const TARGET_HOST = process.env.TARGET_HOST;
-// const PROXY_HOST = process.env.PROXY_HOST;
-// Reference: https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/matching-algorithm/
-
-
-// Proxy middleware options
-const proxyMwOptions = {
-    target: process.env.TARGET_HOST, 
-    changeOrigin: true,
-    router: {
-        // '/api/channel/v1': 'http://localhost:3001/mock/',
-        '/api/framework/v1/read/agriculture_framework':  process.env.PROXY_HOST,
-        '/api/channel/v1' : process.env.PROXY_HOST,   // reference: https://www.npmjs.com/package/http-proxy-middleware#options
-    }
-};
-// console.log(`proxyMwOptions ${JSON.stringify(proxyMwOptions)}`);
+const config = require('./config.js');
 
 /**
  * To create remote access for this local nodejs server.
@@ -41,10 +21,11 @@ const proxyMwOptions = {
  */
 app.get('/config', (req, res) => {
     res.json({
-        node_env: process.env.NODE_ENV,
-        port: process.env.PORT,
-        targetHost: process.env.TARGET_HOST,
-        proxyHost: process.env.PROXY_HOST
+        node_env: config.NODE_ENV,
+        port: config.PORT,
+        targetHost: config.TARGET_HOST,
+        proxyHost: config.PROXY_HOST,
+        proxyUrls: config.PROXY_URLS
     });
 });
 
@@ -56,16 +37,28 @@ app.get('/config', (req, res) => {
  */
 function createLocalServer() {
     if(verifyProxyConfig()){
-        app.use('/api/', createProxyMiddleware(proxyMwOptions));
-        app.listen(process.env.PORT);
+        app.use('/api/', createProxyMiddleware(getMwConfig()));
+        app.listen(config.PORT);
     } else {
         console.log(`The TARGET_HOST & PROXY_HOST configurations are incorrect.`);
     }
 }
 
+function getMwConfig() {
+    // Proxy middleware options
+    var proxyRoutes = Object.assign(...config.PROXY_URLS.map(url => ({ [url]: config.PROXY_HOST })));
+    const proxyMwOptions = {
+        target: config.TARGET_HOST, 
+        changeOrigin: true,
+        router: proxyRoutes
+    };
+
+    return proxyMwOptions
+}
+
 function verifyProxyConfig() {
-    let isConfigRight = false
-    if(proxyMwOptions.TARGET_HOST && proxyMwOptions.PROXY_HOST ){
+    let isConfigRight = false;
+    if(config.TARGET_HOST && config.PROXY_HOST ){
         isConfigRight = true;
     }
     return isConfigRight;
