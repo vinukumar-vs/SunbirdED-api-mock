@@ -16,7 +16,7 @@ PROXY_HOST =  xxxx      // ex:'https://proxy-server.com'
 
 `TARGET_HOST` => Actual server host url which will be serving the API's for SunbirdEd-Portal  
 `PROXY_HOST`  => Proxy server host url which you have created to mock the response of specific API's/end-points (suggest to use postman mock-server)  
-
+4. `npm run start`
 
 ## Improvements
 * How to integrate into existing SunbirdED-Portal itself instead of separate API's
