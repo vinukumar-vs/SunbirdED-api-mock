@@ -24,6 +24,9 @@ PROXY_HOST =  xxxx      // ex:'https://proxy-server.com'
 
 ## How to use
 
+<img width="588" alt="image" src="https://github.com/vinukumar-vs/SunbirdED-api-mock/assets/4496096/d83dc44c-2858-49c4-bb6a-5094f5ca1121">
+
+
 **Step 1:**  
 Import the sample [postman collection](https://github.com/vinukumar-vs/SunbirdED-api-mock/tree/main/postman.collection) file into postman. Use this collection as a mock collection for Postman mock server.  
 Mock the API that you want to - Ex: Channel read api below  
