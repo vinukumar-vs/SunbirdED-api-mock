@@ -23,8 +23,8 @@ PROXY_HOST =  xxxx      // ex:'https://proxy-server.com'
 * How to load from JSON files rather than proxy host(Proxy server created for mock - Postman mock server)
 
 ## How to use
+<img width="592" alt="image" src="https://github.com/vinukumar-vs/SunbirdED-api-mock/assets/4496096/fb6c6eaa-776d-4d3f-a8d7-826be3f92e94">
 
-<img width="588" alt="image" src="https://github.com/vinukumar-vs/SunbirdED-api-mock/assets/4496096/d83dc44c-2858-49c4-bb6a-5094f5ca1121">
 
 
 **Step 1:**  
