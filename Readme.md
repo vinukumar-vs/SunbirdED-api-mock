@@ -16,7 +16,7 @@ PROXY_HOST =  xxxx      // ex:'https://proxy-server.com'
 
 `TARGET_HOST` => Actual server host url which will be serving the API's for SunbirdEd-Portal  
 `PROXY_HOST`  => Proxy server host url which you have created to mock the response of specific API's/end-points (suggest to use postman mock-server)  
-
+4. `npm run start`
 
 ## Improvements
 * How to integrate into existing SunbirdED-Portal itself instead of separate API's
@@ -24,8 +24,11 @@ PROXY_HOST =  xxxx      // ex:'https://proxy-server.com'
 
 ## How to use
 
+<img width="588" alt="image" src="https://github.com/vinukumar-vs/SunbirdED-api-mock/assets/4496096/d83dc44c-2858-49c4-bb6a-5094f5ca1121">
+
+
 **Step 1:**  
-Import the sample postman collection file into postman. Use this collection as a mock collection for Postman mock server.  
+Import the sample [postman collection](https://github.com/vinukumar-vs/SunbirdED-api-mock/tree/main/postman.collection) file into postman. Use this collection as a mock collection for Postman mock server.  
 Mock the API that you want to - Ex: Channel read api below  
 ```
 curl --location 'https://dbcf2201-123f-4729-b5a5-0af277e92f7e.mock.pstmn.io/api/channel/v1/read/0135261634806579203'
